@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title') Top Trips @endsection
 @section('content')
     
     <!-- breadcrumb start-->

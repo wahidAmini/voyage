@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('title') Trips Detail @endsection
 @section('content')
     
     <!--event_part start-->

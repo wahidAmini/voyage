@@ -14,8 +14,8 @@ class StaticController extends Controller
     {
         return view('voyage/trips');
     }
-    public function trip($id)
+    public function trip($id = null)
     {
-        return view('voyage/tripdetail');
+        return view('voyage/tripdetail', [['tripId' => $id]]);
     }
 }

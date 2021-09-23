@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('title') Home @endsection
 @section('content')
  <!-- banner part start-->
  <section class="banner_part">

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title') Contact @endsection
 @section('content')
     <!-- breadcrumb start-->
     <section class="breadcrumb breadcrumb_bg">

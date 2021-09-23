@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StaticController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,21 +14,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('home', function () {
-    return view('voyage/home');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', "App\Http\Controllers\StaticController@home")->name('home');
+
 Route::get('about', function () {
     return view('voyage/about');
 });
+
 Route::get('contact', function () {
     return view('voyage/contact');
 });
-Route::get('trips', function () {
-    return view('voyage/trips');
-});
-Route::get('tripdetail', function () {
-    return view('voyage/tripdetail');
-});
+
+Route::get('trips', [StaticController::class, 'trips'])->name('trips');
+
+Route::get('tripdetail/{id?}', [StaticController::class, 'trip'])->name('tripdetail');

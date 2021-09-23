@@ -6,7 +6,7 @@
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Martine</title>
+      <title>Voyage | @yield('title')</title>
       <link rel="icon" href="img/favicon.png">
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -31,7 +31,6 @@
       <link rel="stylesheet" href="css/style.css">
       {{-- fin --}}
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
 </head>
 <body>
    <!--::header part start::-->
@@ -64,7 +63,7 @@
               <div class="row align-items-center ">
                   <div class="col-lg-12">
                       <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                          <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                          <a class="navbar-brand" href="{{route('home')}}"> <img src="{{ asset('img/logo.png')}}" alt="logo"> </a>
                           <button class="navbar-toggler" type="button" data-toggle="collapse"
                               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                               aria-expanded="false" aria-label="Toggle navigation">
@@ -75,10 +74,10 @@
                               id="navbarSupportedContent">
                               <ul class="navbar-nav">
                                   <li class="nav-item">
-                                      <a class="nav-link" href="index.html">Home</a>
+                                      <a class="nav-link" href="{{ route('home') }}">Home</a>
                                   </li>
                                   <li class="nav-item">
-                                      <a class="nav-link" href="about.html">About</a>
+                                      <a class="nav-link" href="{{ url('about') }}">About</a>
                                   </li>
                                   <li class="nav-item">
                                       <a class="nav-link" href="packages.html">packages</a>
@@ -101,13 +100,13 @@
                                           pages
                                       </a>
                                       <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                          <a class="dropdown-item" href="top_place.html">top place</a>
-                                          <a class="dropdown-item" href="tour_details.html">tour details</a>
-                                          <a class="dropdown-item" href="elements.html">Elements</a>
+                                          <a class="dropdown-item" href="{{ route('trips') }}">top place</a>
+                                          <a class="dropdown-item" href="">tour details</a>
+                                          <a class="dropdown-item" href="">Elements</a>
                                       </div>
                                   </li>
                                   <li class="nav-item">
-                                      <a class="nav-link" href="contact.html">Contact</a>
+                                      <a class="nav-link" href="{{url('contact')}}">Contact</a>
                                   </li>
                               </ul>
                           </div>
