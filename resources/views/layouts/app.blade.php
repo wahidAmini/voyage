@@ -7,28 +7,28 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title>Voyage | @yield('title')</title>
-      <link rel="icon" href="img/favicon.png">
+      <link rel="icon" href="{{ url('img/favicon.png')}}">
       <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="{{ url('css/bootstrap.min.css')}}">
       <!-- animate CSS -->
-      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="{{ url('css/animate.css')}}">
       <!-- owl carousel CSS -->
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="{{ url('css/owl.carousel.min.css')}}">
       <!-- themify CSS -->
-      <link rel="stylesheet" href="css/themify-icons.css">
+      <link rel="stylesheet" href="{{ url('css/themify-icons.css')}}">
       <!-- flaticon CSS -->
-      <link rel="stylesheet" href="css/flaticon.css">
+      <link rel="stylesheet" href="{{ url('css/flaticon.css')}}">
       <!-- fontawesome CSS -->
-      <link rel="stylesheet" href="fontawesome/css/all.min.css">
+      <link rel="stylesheet" href="{{ url('fontawesome/css/all.min.css')}}">
       <!-- magnific CSS -->
-      <link rel="stylesheet" href="css/magnific-popup.css">
-      <link rel="stylesheet" href="css/gijgo.min.css">
+      <link rel="stylesheet" href="{{ url('css/magnific-popup.css')}}">
+      <link rel="stylesheet" href="{{ url('css/gijgo.min.css')}}">
       <!-- niceselect CSS -->
-      <link rel="stylesheet" href="css/nice-select.css">
+      <link rel="stylesheet" href="{{ url('css/nice-select.css')}}">
       <!-- slick CSS -->
-      <link rel="stylesheet" href="css/slick.css">
+      <link rel="stylesheet" href="{{ url('css/slick.css')}}">
       <!-- style CSS -->
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="{{ url('css/style.css')}}">
       {{-- fin --}}
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
@@ -101,7 +101,7 @@
                                       </a>
                                       <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
                                           <a class="dropdown-item" href="{{ route('trips') }}">top place</a>
-                                          <a class="dropdown-item" href="">tour details</a>
+                                          <a class="dropdown-item" href="{{ route('tripdetail') }}">tour details</a>
                                           <a class="dropdown-item" href="">Elements</a>
                                       </div>
                                   </li>
@@ -194,27 +194,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <!-- footer part end-->
 
   <!-- jquery plugins here-->
-  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="{{url('js/jquery-1.12.1.min.js')}}"></script>
   <!-- popper js -->
-  <script src="js/popper.min.js"></script>
+  <script src="{{url('js/popper.min.js')}}"></script>
   <!-- bootstrap js -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="{{url('js/bootstrap.min.js')}}"></script>
   <!-- magnific js -->
-  <script src="js/jquery.magnific-popup.js"></script>
+  <script src="{{url('js/jquery.magnific-popup.js')}}"></script>
   <!-- swiper js -->
-  <script src="js/owl.carousel.min.js"></script>
+  <script src="{{url('js/owl.carousel.min.js')}}"></script>
   <!-- masonry js -->
-  <script src="js/masonry.pkgd.js"></script>
+  <script src="{{url('js/masonry.pkgd.js')}}"></script>
   <!-- masonry js -->
-  <script src="js/jquery.nice-select.min.js"></script>
-  <script src="js/gijgo.min.js"></script>
+  <script src="{{url('js/jquery.nice-select.min.js')}}"></script>
+  <script src="{{url('js/gijgo.min.js')}}"></script>
   <!-- contact js -->
-  <script src="js/jquery.ajaxchimp.min.js"></script>
-  <script src="js/jquery.form.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/mail-script.js"></script>
-  <script src="js/contact.js"></script>
+  <script src="{{url('js/jquery.ajaxchimp.min.js')}}"></script>
+  <script src="{{url('js/jquery.form.js')}}"></script>
+  <script src="{{url('js/jquery.validate.min.js')}}"></script>
+  <script src="{{url('js/mail-script.js')}}"></script>
+  <script src="{{url('js/contact.js')}}"></script>
   <!-- custom js -->
-  <script src="js/custom.js"></script>
+  <script src="{{url('js/custom.js')}}"></script>
 </body>
 </html>
