@@ -40,13 +40,9 @@ Route::prefix('admin')->group(function () {
 
     Route::post('trips/store', [TripController::class, 'store'])->name('admin.trips.store');
 
-    // out of groupe 
-    // Route::get('tripdetail/{id?}', [TripController::class, 'show'])->name('admin.trip.show');
+    Route::get('trips/edit/{id}', [TripController::class, 'edit'])->name('admin.trip.edit');
+    // update a post
+    Route::post('trips/update/{id}', [TripController::class, 'update'])->name('admin.trip.update');
 
-    Route::get('comments', function () {
-        return "Page admin/comment";
-    });
-    Route::get('plan', function () {
-        return "Page admin/plan";
-    });
+    Route::get('trips/delete/{id}', [TripController::class, 'destroy'])->name('admin.trip.delete');
 });

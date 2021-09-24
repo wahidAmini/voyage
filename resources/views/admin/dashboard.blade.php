@@ -26,9 +26,9 @@
        {{-- <td>{{$trip->timestamps}}</td> --}}
        <td>{{$trip->country}}</td>
 
-       <td><a class="btn btn-info" href="{{-- {{route('trip',['id'=>$trip->id])}} --}}">Detail</a></td>
-       <td><a class="btn btn-success" href="{{-- {{route('trip.edit',$trip->id)}} --}}">Update</a></td>
-       <td><a class="btn btn-danger" href="{{-- {{route('delete',['id'=>$trip->id])}} --}}">Delete</a></td>
+       <td><a class="btn btn-info" href="{{route('tripdetail', $trip->id)}}">Detail</a></td>
+       <td><a class="btn btn-success" href="{{route('admin.trip.edit',$trip->id)}}">Update</a></td>
+       <td><a class="btn btn-danger" href="{{route('admin.trip.delete',$trip->id)}}">Delete</a></td>
        
      </tr>
      @endforeach

@@ -13,7 +13,7 @@ class StaticController extends Controller
     }
     public function trips()
     {
-        $trips = Trip::all();
+        $trips = Trip::all()->take(10);
         return view('voyage/trips', ['trips' => $trips]);
     }
     public function trip($id = null)

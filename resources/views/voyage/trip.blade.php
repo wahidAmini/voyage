@@ -1,1 +1,0 @@
-<h2>Trip detail</h2>

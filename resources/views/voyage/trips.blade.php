@@ -39,7 +39,7 @@
                         <img src="{{$trip->img}}" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="#" class="place_btn">travel</a>
+                                <a href="{{route('tripdetail',$trip->id)}}" class="place_btn">travel</a>
                                 <h3>{{$trip->city}}</h3>
                                 <p>{{$trip->country}}</p>
                                 <div class="place_review">

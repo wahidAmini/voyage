@@ -71,7 +71,9 @@ class TripController extends Controller
      */
     public function edit($id)
     {
-        //
+        $trip = Trip::find($id);
+        // dd($editpost);
+        return view('admin/updatetrip', ['edit' => $trip]);
     }
 
     /**
@@ -83,7 +85,18 @@ class TripController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $trip = Trip::find($id);
+        $trip->city = $request->city;
+        $trip->country = $request->country;
+        $trip->continent = $request->continent;
+        $trip->price = $request->price;
+        $trip->organizer = $request->organizer;
+        $trip->rating = $request->rating;
+        $trip->img = $request->image;
+        $trip->description = $request->description;
+        $trip->save();
+
+        return redirect('trips');
     }
 
     /**
@@ -94,6 +107,8 @@ class TripController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $trip = Trip::find($id);
+        $trip->delete();
+        return redirect('admin/trips')->with('success', 'Post deleted successfully!');
     }
 }

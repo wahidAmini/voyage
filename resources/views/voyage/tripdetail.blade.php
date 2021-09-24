@@ -30,7 +30,7 @@
                                             </div>
                                         </div>
                                         <a href="#" class="btn_1">Plan Details</a>
-                                        <img src="{{$trip->img}}" alt="">
+                                      
                                     </div>
                                 </div>
                             </div>
